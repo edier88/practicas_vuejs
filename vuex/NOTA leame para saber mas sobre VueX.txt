@@ -1,0 +1,18 @@
+VueX usa el patrón "estado-administración" (State Management)
+Esto se explica mejor en la siguiente página, la cual, es la documentación oficial de VueX:
+
+https://vuex.vuejs.org/#what-is-a-state-management-pattern
+
+VueX se usa principalmente para trabajar con componentes de Vue.js, dado que estos necesitan compartir datos para actualizar su información, VueX usa el patrón "estado-administración" para cumplir este cometido.
+
+Este patrón se compone de:
+
+* Estado: 
+Tiene todas las variables que necesitan los componentes para actualizar su vista, apariencia o información contenida en ellos
+
+* Mutaciones:
+Poseen funciones que tienen la lógica para cambiar las variables del "Estado", dependiendo de lo que requiera el usuario
+
+* Acciones:
+Las acciones disparan "commits" para interactuar con las funciones de las "mutaciones"
+Las acciones generalmente se usan para interactuar con el Backend o con una API externa o con datos en sistemas externos
